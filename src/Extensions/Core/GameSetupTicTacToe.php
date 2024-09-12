@@ -1,6 +1,6 @@
 <?php
 
-namespace MyDramGames\Games\TicTacToe;
+namespace MyDramGames\Games\TicTacToe\Extensions\Core;
 
 use MyDramGames\Core\GameOption\GameOptionTypeGeneric;
 use MyDramGames\Core\GameOption\GameOptionValueCollection;

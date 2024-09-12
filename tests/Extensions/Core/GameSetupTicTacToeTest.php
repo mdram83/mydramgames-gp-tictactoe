@@ -1,12 +1,12 @@
 <?php
 
-namespace Tests;
+namespace Tests\Extensions\Core;
 
 use MyDramGames\Core\GameOption\GameOptionCollectionPowered;
 use MyDramGames\Core\GameOption\GameOptionValueCollectionPowered;
 use MyDramGames\Core\GameOption\Values\GameOptionValueAutostartGeneric;
 use MyDramGames\Core\GameOption\Values\GameOptionValueForfeitAfterGeneric;
-use MyDramGames\Games\TicTacToe\GameSetupTicTacToe;
+use MyDramGames\Games\TicTacToe\Extensions\Core\GameSetupTicTacToe;
 use PHPUnit\Framework\TestCase;
 
 class GameSetupTicTacToeTest extends TestCase
