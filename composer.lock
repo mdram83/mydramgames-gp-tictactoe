@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "mdram83/mydramgames-core",
-            "version": "v1.0.003",
+            "version": "v1.0.004",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mdram83/mydramgames-core.git",
-                "reference": "9be56340387e1286b5945cc64233984693663b2b"
+                "reference": "30c8b72fac93b27389a3a727b8bae64c21aa711d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mdram83/mydramgames-core/zipball/9be56340387e1286b5945cc64233984693663b2b",
-                "reference": "9be56340387e1286b5945cc64233984693663b2b",
+                "url": "https://api.github.com/repos/mdram83/mydramgames-core/zipball/30c8b72fac93b27389a3a727b8bae64c21aa711d",
+                "reference": "30c8b72fac93b27389a3a727b8bae64c21aa711d",
                 "shasum": ""
             },
             "require": {
@@ -51,10 +51,10 @@
             ],
             "description": "Core features for MyDramGames project",
             "support": {
-                "source": "https://github.com/mdram83/mydramgames-core/tree/v1.0.003",
+                "source": "https://github.com/mdram83/mydramgames-core/tree/v1.0.004",
                 "issues": "https://github.com/mdram83/mydramgames-core/issues"
             },
-            "time": "2024-09-12T15:22:21+00:00"
+            "time": "2024-09-12T18:49:55+00:00"
         },
         {
             "name": "mdram83/mydramgames-utils",
