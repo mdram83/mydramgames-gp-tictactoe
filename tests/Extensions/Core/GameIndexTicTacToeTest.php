@@ -104,9 +104,8 @@ class GameIndexTicTacToeTest extends TestCase
         ));
     }
 
-    public function testCreateGamePlay(): void
+    public function testGetGamePlayClassname(): void
     {
-        $invite = $this->getGameInvite();
-        $this->assertInstanceOf(GamePlayTicTacToe::class, $this->index->createGamePlay($invite));
+        $this->assertEquals(GamePlayTicTacToe::class, $this->index->getGamePlayClassname());
     }
 }
