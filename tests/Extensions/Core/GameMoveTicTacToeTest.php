@@ -49,4 +49,34 @@ class GameMoveTicTacToeTest extends TestCase
         $expected = ['fieldKey' => $this->fieldKey];
         $this->assertEquals($expected, $this->move->getDetails());
     }
+
+    public function testCreateThrowExceptionIfParamsMissingFieldKey(): void
+    {
+        $this->expectException(GameMoveException::class);
+        $this->expectExceptionMessage(GameMoveException::MESSAGE_INVALID_MOVE_PARAMS);
+
+        GameMoveTicTacToe::create($this->player, ['invalid-key' => 1]);
+    }
+
+    public function testCreateThrowExceptionIfParamsMissFieldKeyValue(): void
+    {
+        $this->expectException(GameMoveException::class);
+        $this->expectExceptionMessage(GameMoveException::MESSAGE_INVALID_MOVE_PARAMS);
+
+        GameMoveTicTacToe::create($this->player, ['fieldKey' => null]);
+    }
+
+    public function testCreateConvertStringValueToInt(): void
+    {
+        $move = GameMoveTicTacToe::create($this->player, ['fieldKey' => '1']);
+        $this->assertInstanceOf(GameMoveTicTacToe::class, $move);
+    }
+
+    public function testCreate(): void
+    {
+        $this->assertInstanceOf(
+            GameMoveTicTacToe::class,
+            GameMoveTicTacToe::create($this->player, ['fieldKey' => 1])
+        );
+    }
 }

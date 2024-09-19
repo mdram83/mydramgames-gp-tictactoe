@@ -64,7 +64,18 @@ class GamePlayTicTacToeTest extends TestCase
     protected function getGameInvite(): GameInvite
     {
         $setup = new GameSetupTicTacToe(new GameOptionCollectionPowered(), new GameOptionValueCollectionPowered());
-        $box = new GameBoxGeneric('tictactoe', 'Tic-Tac-Toe', $setup, true, false, null, null, null);
+        $box = new GameBoxGeneric(
+            'tictactoe',
+            'Tic-Tac-Toe',
+            $setup,
+            GamePlayTicTacToe::class,
+            GameMoveTicTacToe::class,
+            false,
+            false,
+            null,
+            null,
+            null,
+        );
         $configurations = new GameOptionConfigurationCollectionPowered(null, [
             new GameOptionConfigurationGeneric('numberOfPlayers', GameOptionValueNumberOfPlayersGeneric::Players002),
             new GameOptionConfigurationGeneric('autostart', GameOptionValueAutostartGeneric::Disabled),
