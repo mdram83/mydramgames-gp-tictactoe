@@ -45,7 +45,7 @@ class GameSetupTicTacToe extends GameSetupBase implements GameSetup
                         GameOptionValueForfeitAfterGeneric::Minute,
                     ]),
                     GameOptionValueForfeitAfterGeneric::Disabled,
-                    GameOptionTypeGeneric::Checkbox
+                    GameOptionTypeGeneric::Radio
                 ),
 
             ];
